@@ -1,0 +1,18 @@
+{
+  "name": "learn-webpack",
+  "version": "1.0.0",
+  "description": "A repository for understanding typescript",
+  "main": "index.js",
+  "author": "Hunter Kievet",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "webpack": "webpack"
+  },
+  "devDependencies": {
+    "ts-loader": "^6.2.0",
+    "typescript": "^3.6.4",
+    "webpack": "^4.41.1",
+    "webpack-cli": "^3.3.9"
+  }
+}
