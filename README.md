@@ -1,15 +1,12 @@
 # Versions
-==========
 
 # Motivation
-============
 
 I would love to be proficient at webpack and some more nuanced stuff in the node environment.
 Babel and tsconfig.json files always go over my head.  I don't understand the ecosystem
 What's the difference between yarn and npm?
 
 # Installation
-==============
 
 ```
 mkdir heezy_tuts
@@ -20,7 +17,6 @@ yarn add -D typescript webpack webpack-cli ts-loader
 
 
 # Learning about TS Config
-==========================
 
 Read more here [tsconfig.json][]
 Presence indicates **typescript project root directory**.
@@ -96,11 +92,11 @@ I would probably do the esnext for module and es6 for target.  If you are suppor
 
 
 ### A sample tsconfig.json file
-===
 
 This is from the webpack tutorial.
 
-```{
+```
+{
   "compilerOptions": {
     "outDir": "./dist/",
     "noImplicitAny": true,
@@ -109,7 +105,8 @@ This is from the webpack tutorial.
     "jsx": "react",
     "allowJs": true
   }
-}```
+}
+```
 
 ```
 "jsx": {
@@ -189,7 +186,6 @@ Add `devtool: 'inline-source-map'` to the main exports of your webpack module.  
 
 
 ### Only use sourcemaps with development: using webpack modes!
-==============================================================
 
 see [webpack mode][] and [webpack single config file][]
 
@@ -199,7 +195,6 @@ see [webpack mode][] and [webpack single config file][]
 
 
 # Learn from where I learned!
-=============================
 
 Something to inspire you to delve deeper in your coding career: [pouet][]
 
