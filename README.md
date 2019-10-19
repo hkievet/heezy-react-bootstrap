@@ -1,9 +1,11 @@
-# Versions
+# Introduction
+
+This is my current react project bootstrap for personal projects and also a place where I will document things
 
 # Motivation
 
 I would love to be proficient at webpack and some more nuanced stuff in the node environment.
-Babel and tsconfig.json files always go over my head.  I don't understand the ecosystem
+Babel and tsconfig.json files always go over my head. I don't understand the ecosystem
 What's the difference between yarn and npm?
 
 # Installation
@@ -15,19 +17,16 @@ git init
 yarn add -D typescript webpack webpack-cli ts-loader
 ```
 
-
 # Learning about TS Config
 
 Read more here [tsconfig.json][]
 Presence indicates **typescript project root directory**.
 
-
 ## Properties: compilerOptions, files, include, exclude, extends, compilerOptions
-
 
 ### Expirement: Compile a typescript file
 
-Running the command `tsc` will run the typescript compiler.  Try it!  I found this bit of the default output interesting for future study of the changes being made to Javascript:
+Running the command `tsc` will run the typescript compiler. Try it! I found this bit of the default output interesting for future study of the changes being made to Javascript:
 
 ```
  --lib                                              Specify library files to be included in the compilation.
@@ -35,6 +34,7 @@ Running the command `tsc` will run the typescript compiler.  Try it!  I found th
 ```
 
 Moving on, write this file:
+
 ```
 // test.ts
 
@@ -44,7 +44,7 @@ x = "1234"
 console.log(x)
 ```
 
-No configuration file is needed for running typescript here.  Just running `tsc`.
+No configuration file is needed for running typescript here. Just running `tsc`.
 
 ```
 // test.js (compiled)
@@ -86,10 +86,9 @@ Very interesting.
 
 These two attributes under `compilerOptions` seem to go together like peanut butter and jelly; or rather like typescript and maintainable frontend applications.
 
-module is the version of es that you are writing.  target is the version that it will be compiled to.  This is called transpiling
+module is the version of es that you are writing. target is the version that it will be compiled to. This is called transpiling
 
-I would probably do the esnext for module and es6 for target.  If you are supporting ie11 then I would set the target to es5. 
-
+I would probably do the esnext for module and es6 for target. If you are supporting ie11 then I would set the target to es5.
 
 ### A sample tsconfig.json file
 
@@ -133,8 +132,7 @@ console.log(`${x}`);
 //# sourceMappingURL=test.js.map
 ```
 
-I have no idea what this means...  But it works.  It looks kind of like genetic code to me.  This is an **unsolved mystery** to me-- that I don't think I need to look into just yet in my career.
-
+I have no idea what this means... But it works. It looks kind of like genetic code to me. This is an **unsolved mystery** to me-- that I don't think I need to look into just yet in my career.
 
 ## Onto Webpack!
 
@@ -172,27 +170,21 @@ ts-loader will handle any files ending in .ts or .tsx the regex can be broken do
 
 Webpack will match either .ts or .tsx because see the `?` in the regular expression.
 
-The call to `path.resolve(__dirname, 'dist')` is a node library, imported at the top.  See documentation here [node path doc][].  The use of `__dirname` is a global object available to all modules in a node environment.  See [node global objects]
+The call to `path.resolve(__dirname, 'dist')` is a node library, imported at the top. See documentation here [node path doc][]. The use of `__dirname` is a global object available to all modules in a node environment. See [node global objects]
 
-But what about `awesome-typescript-loader`?  Onceuponatime I had an intern who converted an old react project to use the `ts-loader` giving the evidence that most people are using it and that it's faster: [https://www.npmtrends.com/awesome-typescript-loader-vs-ts-loader][]
+But what about `awesome-typescript-loader`? Onceuponatime I had an intern who converted an old react project to use the `ts-loader` giving the evidence that most people are using it and that it's faster: [https://www.npmtrends.com/awesome-typescript-loader-vs-ts-loader][]
 
 ## Sourcemaps
 
-These guys are 100% necessary for debugging.  I don't view sourcemaps as optional.
+These guys are 100% necessary for debugging. I don't view sourcemaps as optional.
 
 Add the line `"sourceMap": true,` to the `compilerOptions` in tsconfig.json.
 
-Add `devtool: 'inline-source-map'` to the main exports of your webpack module.  see [webpack devtool][]
-
+Add `devtool: 'inline-source-map'` to the main exports of your webpack module. see [webpack devtool][]
 
 ### Only use sourcemaps with development: using webpack modes!
 
 see [webpack mode][] and [webpack single config file][]
-
-
-
-
-
 
 # Learn from where I learned!
 
@@ -202,14 +194,13 @@ Cheetsheet for GFM (GitHub Flavored Markdown): [markdown cheatsheet][]
 
 Official GFM Spec: [gfm spec][]
 
-Early markdown with ATX (2002)?  [atx][]
+Early markdown with ATX (2002)? [atx][]
 
 One long essay on the different versions of ES: [es versions][]
 
-While doing learning on ts-loader I noticed something about yarn plug n' play (PnP).  I found this interesting article that explains that node doesn't know about packages and that `node_modules` works, but that a lot of computations are done for figuring out how to put together packages and doing IO copying.  Read more at [yarn PnP overview]
+While doing learning on ts-loader I noticed something about yarn plug n' play (PnP). I found this interesting article that explains that node doesn't know about packages and that `node_modules` works, but that a lot of computations are done for figuring out how to put together packages and doing IO copying. Read more at [yarn PnP overview]
 
 A must read typescript do's and dont's guide: [ts dos and donts][]
-
 
 [pouet]: http://www.pouet.net/index.php
 [tsconfig.json]: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
@@ -221,7 +212,7 @@ A must read typescript do's and dont's guide: [ts dos and donts][]
 [node path doc]: https://nodejs.org/docs/latest/api/path.html
 [node global objects]: https://nodejs.org/docs/latest/api/globals.html
 [ts-loader is better]: https://www.npmtrends.com/awesome-typescript-loader-vs-ts-loader
-[yarn PnP overview]: yarn PnP overvie://yarnpkg.com/en/docs/pnp 
+[yarn pnp overview]: https://yarnpkg.com/en/docs/pnp
 [webpack devtool]: https://webpack.js.org/configuration/devtool/
 [ts dos and donts]: https://www.typescriptlang.org/docs/handbook/declaration-files/do-s-and-don-ts.html
 [sourcemap magic]: https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/#toc-base64vlq
