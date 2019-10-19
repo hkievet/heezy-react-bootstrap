@@ -4,6 +4,9 @@ const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
+  entry: {
+    main: "./src/index.tsx"
+  },
   plugins: [
     // new BundleAnalyzerPlugin(),
     new HtmlWebpackPlugin({
@@ -48,3 +51,5 @@ module.exports = {
   // This is important because it allows us to avoid bundling all of our
   // dependencies, which allows browsers to cache those libraries between builds.
 };
+
+// how does webpack know that src/index.tsx is the entrypoint
