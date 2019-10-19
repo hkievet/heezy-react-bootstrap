@@ -1,0 +1,145 @@
+// info on text-rendering:
+// https://css-tricks.com/almanac/properties/t/text-rendering/
+
+@font-face {
+  font-family: "Noah";
+  src: url("fonts/noah/Noah-Regular.eot");
+  src: url("fonts/noah/Noah-Regular.eot?#iefix") format("embedded-opentype"),
+    url("fonts/noah/Noah-Regular.woff") format("woff"),
+    url("fonts/noah/Noah-Regular.ttf") format("truetype");
+
+  font-style: normal;
+  font-weight: normal;
+}
+
+.font-noah {
+  font-family: "Noah";
+}
+
+@font-face {
+  font-family: "Gangster Grotesk";
+  src: url("fonts/gangstergrotesk/GangsterGrotesk-Regular.otf")
+    format("opentype");
+  font-weight: normal;
+}
+.font-gangster {
+  font-family: Gangster Grotesk;
+}
+
+@font-face {
+  font-family: "Gangster Grotesk";
+  src: url("fonts/gangstergrotesk/GangsterGrotesk-Light.otf") format("opentype");
+  font-weight: lighter;
+}
+.font-gangster-light {
+  font-family: Gangster Grotesk;
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "Gangster Grotesk";
+  src: url("fonts/gangstergrotesk/GangsterGrotesk-Bold.otf") format("opentype");
+  font-weight: bold;
+}
+.font-gangster-bold {
+  font-family: Gangster Grotesk;
+  font-weight: bold;
+}
+
+// striped shadows
+@font-face {
+  font-family: "Striped Shadows";
+  src: url("fonts/stripedshadows/StripedShadows.otf") format("opentype"),
+    url("fonts/stripedshadows/StripedShadows.ttf") format("truetype");
+
+  font-style: normal;
+  font-weight: normal;
+}
+.font-striped-shadows {
+  font-family: Striped Shadows;
+}
+
+// renomono
+@font-face {
+  font-family: "RenoMono";
+  src: url("fonts/renomono/RenoMono.woff2") format("woff2"),
+    url("fonts/renomono/RenoMono.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal;
+}
+.font-renomono {
+  font-family: RenoMono;
+}
+
+// ignite
+@font-face {
+  font-family: "Ignite";
+  src: url("fonts/ignite/Ignite.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal;
+}
+.font-ignite {
+  font-family: Ignite;
+}
+
+// explorer
+@font-face {
+  font-family: "Explorer";
+  src: url("fonts/explorer/ExplorerFree-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+.font-explorer {
+  font-family: Explorer;
+}
+
+// produk
+@font-face {
+  font-family: "Produk";
+  src: url("fonts/produk/Produk-Regular.otf") format("opentype"),
+    url("fonts/produk/Produk-Regular.ttf") format("truetype"),
+    url("fonts/produk/Produk-Regular.woff") format("woff"),
+    url("fonts/produk/Produk-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+.font-produk {
+  font-family: Produk;
+}
+
+// rosarina
+@font-face {
+  font-family: "Rosarina";
+  src: url("fonts/rosarina/rosarina.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+.font-rosarina {
+  font-family: Rosarina;
+  text-transform: uppercase;
+}
+
+// en garde
+@font-face {
+  font-family: "En Garde";
+  src: url("fonts/engarde/EnGarde.otf") format("opentype"),
+    url("fonts/engarde/EnGarde.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+.font-en-garde {
+  font-family: En Garde;
+}
+
+// iknu
+@font-face {
+  font-family: "Iknu";
+  src: url("fonts/iknu/iknu-font.otf") format("opentype"),
+    url("fonts/iknu/iknu-font.ttf") format("truetype");
+
+  font-style: normal;
+  font-weight: normal;
+}
+.font-iknu {
+  font-family: Iknu;
+}
