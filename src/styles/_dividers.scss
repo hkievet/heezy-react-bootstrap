@@ -1,0 +1,15 @@
+.dotdivider__container {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  margin: 25px auto;
+}
+
+.dotdivider__dot {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: black;
+  border-radius: 5px;
+  margin: 0 5px;
+}

@@ -1,6 +1,31 @@
 @import "./fonts/fonts";
+@import "./colors";
+@import "./containers";
+@import "./dividers";
 
 html {
-  font-size: 12px;
+  font-size: 16px;
   font-family: Noah;
+  // background-color: #000000;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 2em;
+}
+
+nav {
+  margin: 20px 0;
+  text-align: center;
+  a {
+    background-color: black;
+    color: white;
+    padding: 0.25rem 0.2rem;
+    text-decoration: none;
+    &:hover {
+      color: $mauve;
+    }
+    margin: 0.25rem 0.2rem;
+  }
 }
