@@ -28,6 +28,7 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.22",
     "@types/react": "^16.9.5",
     "copy-webpack-plugin": "^5.0.4",
     "history": "^4.10.1",

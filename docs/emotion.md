@@ -2,9 +2,13 @@
 
 11-2-2019, cafe saturday
 
+## Install:
+
+`yarn add @emotion/core`
+
 Goal: Add Emotion compile capabilities to the project and make a cool animation loader icon.
 
-The goal is to use emotion within a *react* project.  So instead of installing `emotion` we use `@emotion/core` as per the [Emotion Documentation][]
+The goal is to use emotion within a _react_ project. So instead of installing `emotion` we use `@emotion/core` as per the [Emotion Documentation][]
 
 A caveat to using typescript is that you need to add a comment to the top of every file:
 
@@ -23,9 +27,8 @@ A nice snippet to use for this:
 	}
 ```
 
-To add a snippet in VS Code: 
+To add a snippet in VS Code:
 
 (cmd+shift+p) > Preferences: Configure User Snippets > typescriptreact.json
 
-
-[Emotion Documentation]: https://emotion.sh/docs/introduction
+[emotion documentation]: https://emotion.sh/docs/introduction
